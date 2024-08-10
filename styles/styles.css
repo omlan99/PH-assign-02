@@ -1,0 +1,267 @@
+/* browser reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* common styles */
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+ul li{
+    list-style: none;
+}
+.btn{
+    font-family: "Inter", sans-serif;
+    padding: 1rem 3rem;
+    background-color: #000;
+    color: #ffffff;
+    border-radius: 2.5rem;
+    font-size: 1.13rem;
+    border: 1px solid #ffffff;
+
+}
+.btn:hover{
+    background-color: #E6533C;
+    border: 1px solid transparent;
+}
+.first-btn{
+    background-color: #E6533C;
+    border: 1px solid transparent;
+}
+.bg-color{
+    background-color: rgb(0, 1, 1);
+}
+.white{
+    color: #ffffff;
+}
+.orange{
+    color: #E6533C;
+}
+.light-black{
+    color: #222222;
+}
+.light-white{
+    color: rgba(255, 255, 255, 0.1);
+}
+.black-gradient{
+    background: linear-gradient(180deg, rgba(17,17,17,1) 100%, rgba(119,119,119,1) 0%);
+}
+.cyan-overlay{
+    color: rgba(6, 255, 210, 0.5);
+}
+.red-overlay{
+    color: rgba(255, 0, 0, 0.3);
+}
+.grey-overlay{
+    color: rgba(0, 0, 0, 0.5);
+}
+.green-overlay{
+    color: rgba(66, 255, 0, 0.3);
+}
+.blue-overlay{
+    color: rgba(0, 71, 255, 0.3);
+}
+.primary-font{
+    font-family: "Inter", sans-serif;
+}
+.secondary-font{
+    font-family: 'Miama', sans-serif;
+}
+.d-flex{
+    display: flex;
+}
+
+/* nav styles start */
+nav{
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.brand-logo{
+    font-size: 2.25rem;
+    font-weight: 600;
+    font-style: italic;
+}
+.nav-links{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2.44rem;
+    padding: 0.75rem 0.25rem;
+    font-size: 1.125rem;
+}
+#menu-icon{
+    display: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 1.25rem;
+    margin-right: 2.94rem;
+}
+.nav-links #home{
+    background-color: #E6533C;
+    border-radius: 2.88rem; 
+}
+.nav-link:hover{
+    background-color: #E6533C;
+    border-radius: 2.88rem; 
+    transition: ease-in-out;
+}
+/* banner styles start */
+.banner{
+    gap: 5.5rem;
+    padding: 0 1rem;
+    justify-content: space-around;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.banner-content h1 span{
+    font-family: 'Miama', sans-serif;
+}
+.banner-content h1{
+    font-size: 4.5rem;
+}
+.banner-content p{
+    color: rgba(255, 255, 255, 0.5);
+    margin: 1.75rem 0;
+}
+.banner-img{
+    position: relative;
+
+}
+.banner-img img{
+    display: block;
+    width: 100%;
+}
+.buttons{
+    gap: 0.8rem;
+
+}
+.workout-video{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 12rem;
+    height: 6rem;
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+.workout-video h3{
+    font-size: 2.5rem;
+}
+.workout-video p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.workout-tutorial{
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color:  rgba(255, 255, 255, 0.1); 
+    width: 12.8rem;
+    height: 6rem;
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.4rem;
+    position: absolute;
+    top: 450px;
+    left: -100px;
+}
+.workout-tutorial .circle{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #E6533C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workout-tutorial h3{
+    font-size: 1.5rem;
+}
+.workout-tutorial p{
+    font-size: 1rem;
+}
+@media (min-width:320px) and (max-width:575.98px){
+    .nav-links{
+        display: none;
+    }
+    #menu-icon{
+        /* visibility: visible; */
+        display: block;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .btn{
+        padding: 1rem 2.5rem;
+
+    }
+    .banner-content .btn .club{
+        display: none;
+    }
+    .workout-video{
+        width: 8.6rem;
+        height: 5rem;
+        top: 0%;
+        left: 51%;
+        padding: 0.8rem;
+    }
+    .workout-video h3{
+        font-size: 1.8rem;
+    }
+    .workout-video p{
+        font-size: 0.7rem;
+    }
+    .workout-tutorial{
+        width: 10rem;
+        height: 4rem;
+        top: 61%;
+        left: 0%;
+        padding: 0.8rem;
+    }
+    .workout-tutorial h3{
+        font-size: 1rem;
+    }
+    .workout-tutorial p{
+        font-size: 0.7rem;
+    }
+} 
+@media (min-width:575.98px) and (max-width: 767.98px) {
+    .nav-links{
+        display: none;
+    }
+    #menu-icon{
+        /* visibility: visible; */
+        display: block;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 80%;
+    }
+    .btn{
+        padding: 1rem 2rem;
+    }
+    .workout-tutorial{
+
+    }
+}
+
+
+
+
+
+
