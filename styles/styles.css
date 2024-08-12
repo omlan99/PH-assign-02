@@ -13,7 +13,7 @@ ul li{
     list-style: none;
 }
 .btn{
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif; 
     padding: 1rem 3rem;
     background-color: #000;
     color: #ffffff;
@@ -209,7 +209,6 @@ nav{
 }
 .habit-images{
     display: grid;
-    /* grid-template-columns: repeat(autofill, minmax(230px, 1fr)); */
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 2.5rem;
 }
@@ -230,6 +229,32 @@ nav{
 }
 .habit-image p{
     font-size: 0.875rem;
+}
+/* run section styles start*/
+.run{
+    padding: 57px 40px 32px ;
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    gap: 10.3rem;
+}
+.run-image{
+    width: 22.875rem;
+    height: 19.5rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.run-image img{
+    display: block;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+    transform: scale(2.5);
+    position: absolute;
+    top: 34%;
+    left: -34%;
+
 }
 
 @media (min-width:320px) and (max-width:575.98px){
@@ -277,12 +302,26 @@ nav{
         font-size: 0.7rem;
     }
 } 
-@media (min-width:575.98px) and (max-width: 767.98px) {
-   
-    
+@media (min-width:575.98px) and (max-width: 992) {
     .banner{
+        gap: 0;
         flex-direction: column;
     }
+    .btn{
+        padding: 1rem;
+    }
+    .workout-video {
+        width: 9rem;
+        top: 23px;
+        left: 160px;
+    }
+    .workout-tutorial{
+        top: 60%;
+        left: 5%;
+    
+    }
+
+
 }
 
 
