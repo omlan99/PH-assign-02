@@ -249,7 +249,10 @@ nav{
     padding-top: 0.8rem ;
     padding-bottom: 2rem;
 }
-
+.run-content .btn{
+    background-color: #E6533C;
+    border: 1px solid transparent;
+}
 .run-image{
     width: 22.875rem;
     height: 19.5rem;
@@ -397,6 +400,11 @@ input, select {
  select option {
     color: rgba(255,255,255,0.5);
     background-color: #222323;
+ }
+ .bmi-input-field .btn{
+    margin-top: 2rem;
+    background-color: #E6533C;
+    border: 1px solid transparent;
  }
 /* meet section styles start */
 .meet{
@@ -596,6 +604,7 @@ hr{
     .nav-link {
         margin-right: 0;
     }
+    
     .banner{
         gap: 0;
         flex-direction: column;
