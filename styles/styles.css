@@ -428,12 +428,19 @@ input, select {
     
     border-radius: 1.1rem;
     overflow: hidden;
+    position: relative;
 }
 .meet-images img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     
+}
+.intro{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+
 }
 /* footer section styles start */
 footer{
@@ -557,7 +564,7 @@ hr{
     .img-col-2{
         grid-column: span 1;
     }
-    .overlay .p-bottom {
+    .overlay .p-bottom{
         top: 60%;
     
     }
@@ -566,10 +573,10 @@ hr{
     .bmi-content{
         padding-left: 1rem;
     }
-    .bmi-chart table {
+    .bmi-chart table{
         width: auto;
     }
-    .bmi-calculator {
+    .bmi-calculator{
         flex-wrap: wrap;
         gap: 2.9rem;
 
@@ -582,6 +589,7 @@ hr{
     .meet-images{
         grid-template-columns: repeat(1, 1fr);
     }
+    
     /* footer styles */
     .footer-content{
         grid-template-columns: repeat(1, 1fr);
@@ -592,22 +600,23 @@ hr{
         padding: 0;
         padding-bottom: 5rem;
     }
-    .brand-logo {
+    .brand-logo{
        margin: 0;
     }
 }
-@media (min-width:575.98px) and (max-width: 992) {
+@media (min-width:575.98px) and (max-width: 992px) {
     
-    .nav-links {
-        padding: 0.75rem 0.25rem;
+    .nav-links{
+        /* padding: 0.75rem 0.25rem; */
+        padding: 0;
     }
     .nav-link {
-        margin-right: 0;
+        margin: auto;
     }
     
     .banner{
         gap: 0;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .btn{
         padding: 1rem;
@@ -621,6 +630,11 @@ hr{
         top: 60%;
         left: 5%;
     
+    }
+    .bmi-calculator{
+        flex-wrap: wrap;
+        gap: 2.9rem;
+
     }
     .logo {
         padding-right: 0rem;
