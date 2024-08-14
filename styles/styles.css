@@ -99,7 +99,7 @@ nav{
 }
 #menu-icon{
     display: none;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .nav-link{
@@ -469,7 +469,7 @@ hr{
 }
 @media (min-width:320px) and (max-width:575.98px){
     p{
-        line-height: 2rem;
+        line-height: 1.3rem;
     }
     .nav-links{
         display: none;
@@ -583,6 +583,9 @@ hr{
     .logo{
         padding: 0;
         padding-bottom: 5rem;
+    }
+    .brand-logo {
+       margin: 0;
     }
 }
 @media (min-width:575.98px) and (max-width: 992) {
